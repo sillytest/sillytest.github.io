@@ -68,12 +68,17 @@ layout: default
                       <div class="ds-share-icons-more">
                       </div>
                     </div>
-                <hr>
                 </div>
                 <!-- 多说 Share end-->
                 {% endif %}
-
-
+                <!-- Social Media -->
+                <div class="share-page">
+                    Share this on &rarr;
+                    <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
+                    <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
+                    <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>
+                </div>
+                <hr class="hidden-sm hidden-xs">
                 <ul class="pager">
                     {% if page.previous.url %}
                     <li class="previous">
@@ -115,26 +120,25 @@ layout: default
                 col-lg-8 col-lg-offset-2
                 col-md-10 col-md-offset-1
                 sidebar-container">
-
                 <!-- Featured Tags -->
-                {% if site.featured-tags %}
+                <!-- {% if site.featured-tags %}
                 <section>
                     <hr class="hidden-sm hidden-xs">
                     <h5><a href="/tags/">CATEGORIES</a></h5>
                     <div class="tags">
-        				{% for tag in site.tags %}
+                                        {% for tag in site.tags %}
                             {% if tag[1].size > {{site.featured-condition-size}} %}
-                				<a href="/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">
+                                <a href="/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">
                                     {{ tag[0] }}
                                 </a>
                             {% endif %}
-        				{% endfor %}
-        			</div>
+                                        {% endfor %}
+                                    </div>
                 </section>
-                {% endif %}
+                {% endif %} -->
 
                 <!-- Friends Blog -->
-                {% if site.friends %}
+                <!-- {% if site.friends %}
                 <hr>
                 <h5>BLOGROLL</h5>
                 <ul class="list-inline blogroll">
@@ -142,7 +146,7 @@ layout: default
                         <li><a href="{{friend.href}}">{{friend.title}}</a></li>
                     {% endfor %}
                 </ul>
-                {% endif %}
+                {% endif %} -->
             </div>
         </div>
     </div>
