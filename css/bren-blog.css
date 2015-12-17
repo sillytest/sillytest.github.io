@@ -1,0 +1,103 @@
+	/* Header */
+
+.site-heading h1
+{
+    font-weight: 800;
+}
+
+hr.title
+{
+    max-width: 50%;
+    margin: auto;
+
+    border-width: 1px;
+}
+
+.subheading
+{
+    margin: none;
+}
+
+
+/* Navbar */
+
+.navbar-brand
+{
+    font-weight: 800;
+}
+
+
+/* Post Content */
+
+.post-content-preview
+{
+    text-align: justify;
+}
+
+.post-container p,
+.post-container ul,
+.post-container li,
+.post-content-preview
+{
+    font-family: 'Noto Serif', 'Times New Roman', serif;
+}
+
+span.meta
+{
+    font-family: 'Open Sans', 'Helvetica', sans-serif;
+
+    margin-top: -20px;
+    margin-bottom: -10px;
+}
+
+a.anchorjs-link
+{
+    text-decoration: none;
+
+    color: rgba(0, 0, 0, .2);
+}
+
+
+/* Sidebar */
+
+.sidebar-container h5
+{
+    font-weight: 600;
+
+    text-align: center;
+}
+
+.sidebar-container .tags
+{
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.short-about img
+{
+    margin: 0 auto;
+}
+
+.short-about ul li
+{
+    margin: -5px 0 5px 3%;
+}
+
+.blogroll
+{
+    text-align: center;
+}
+
+
+/* Footer */
+
+.copyright
+{
+    font-family: 'Open Sans', 'Helvetica', sans-serif;
+    font-weight: 300;
+
+    margin-left: 10%;
+
+    text-align: center;
+}
